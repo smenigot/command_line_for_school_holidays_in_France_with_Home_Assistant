@@ -1,0 +1,16 @@
+command_line:
+    - sensor:
+      name: "Vacances scolaires"
+      command: "python3 /config/python_scripts/vacances_scolaires.py"
+      scan_interval: 43200  # Intervalle de rafraîchissement en secondes (12 heure)
+      json_attributes:
+        - description
+        - start_date
+        - end_date
+        - location
+        - zones
+        - annee_scolaire
+        - aujourdhui
+        - demain
+        - semaine prochaine
+      value_template: "{{ value_json.aujourdhui }}"
