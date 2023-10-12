@@ -1,0 +1,1 @@
+# command_line_for_school_holidays_in_France_with_Home_Assistant
